@@ -1,0 +1,22 @@
+# thymeleaf start
+spring:
+  thymeleaf:
+    mode: html5
+    encoding: UTF-8
+    #close cache,otherwise you can't see the real time page
+    cache: false
+  mvc:
+    static-path-pattern: /**
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password:
+    url: jdbc:mysql://localhost:3306/springbootjpa?useSSL=false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+
+server:
+  port: 8081
